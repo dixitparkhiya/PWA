@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>PWA</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, user-scalable=no">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+      <!--link rel="manifest" href="/manifest.json" /-->
+      <link rel="manifest" href="/manifest.json">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+      <!-- Add to home screen for Safari on iOS -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="Weather PWA">
+      <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+      <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+      <meta name="msapplication-TileColor" content="#2F3BA2">
+      
+      <!-----------------------------------------------
+      fonts-     font-family: 'Raleway', sans-serif;
+                 font-family: 'Roboto Slab', serif;        
+      ------------------------------------------------->
+     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+    <div id="app-shell">
+        <header>
+            <div id="menu" onclick="sliderOpen();"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></div>
+            <div id="title"> Time Line</div>
+            <div id="left">
+            <div id="add-item"><i class="fa fa-plus" aria-hidden="true" id="plus" onclick="addItem();"></i></div>
+            <div id="save"><i class="fa fa-save" aria-hidden="true"></i></div></div>
+        </header>
+        <div id="add-item-menu">
+           <br>
+            <label for=""><a> Day start at :</a> <input type="time" value="10:00:00" name="DayStart" id="DayStart"></label><br><br>
+            <label for=""><a> Day End at :</a> <input type="time" value="21:00:00" name="DayEnd" id="DayEnd"></label><br><br>
+            <label for=""><a> Time Interval (minit) :</a> <input type="number" value="60" id="TimeInter" style="width: 25px;" name="TimeInterval"></label><br>
+            <input type="button" value="Submit" id="add-item" onclick="submit2();">
+            
+        </div>
+       <div id="slider-box">
+           <div id="slider-top">
+           <div id="close-nav" onclick="sliderClose();"><i class="fa fa-close" aria-hidden="true" ></i></div>
+           </div>
+           <div id="slider-content"></div>
+       </div> 
+    </div>
+    <!--div id="data">
+            <div id="container" class="default">
+        
+               <div id="content">
+                   <div id="time-block"> <p>12 : 00 AM </p></div>
+                   <div id="do-block"><p>  Shopping </p></div>
+               </div>
+               
+               <div id="close-btn" onclick="close();"><i class="fa fa-close fa-2x" aria-hidden="true" id="close-task"></i></div>
+               
+            </div>
+        </div-->
+    
+    <script src="javascript/script.js"></script>
+    <script src="javascript/sw-registration-script.js"></script>
+</body>
+</html>

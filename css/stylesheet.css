@@ -1,0 +1,193 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --border:1px solid black;
+    --fsize: 25px; //font-size
+}
+
+body
+{
+  // background-image: url(../24178104_306467823201574_7591138847803572224_n.jpg);
+}
+
+header{
+    width: 100%;
+    font-size: 25px;
+    position: fixed;
+    background-color: dodgerblue;
+    background-image: linear-gradient(45deg,#8860D0,#5680E9,#5AB9EA,#c1c8e4,#c1c8e4);
+    z-index: 5;
+    transition: 0.5s;
+    //background-image: url(https://griffithmedicalcentre.com.au/wp-content/uploads/2016/08/cropped-header-background.jpg);
+    background-size: 100%;
+    
+}
+header div{
+    //border: var(--border);
+    display: inline-block;
+    padding: 10px;
+}
+
+#title{
+    width: 60%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+}
+#left{
+    padding: 0px;
+    float: right;
+    margin-right: 5px;
+}
+
+#add-item-menu{
+    position:fixed;
+    margin-top: -110px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    z-index: 4;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px gray;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/01/89/64560d00988e181.jpg);
+}
+#add-item-menu  input
+{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 1px;
+}
+#add-item-menu > input{
+    height: 25px;
+    width: 70%;
+    text-align: center;
+    margin: 10px 5px;
+    border: none;
+    border-bottom: 0.5px solid dodgerblue
+}
+
+input[type=button]{
+    background-color: #5ab9ea;
+    border: none;
+}
+
+#bar{
+    width: 100%;
+    background-color: ;
+    height: 25px;
+    box-shadow: 0px 2px 2px gray;
+    border: 0px solid;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#bar i{
+    padding-top: 6px;
+}
+/*
+/////////////////////Side navigation///////////////////////////////
+*/
+#slider-box{
+    height: 100%;
+    width: 85%;
+    z-index: 5;
+    position: fixed;
+    background-image: url(https://img.gadgethacks.com/img/72/87/63549145084616/0/download-all-new-android-lollipop-wallpapers-right-now.w1456.jpg);
+    background-size: 100%;
+    margin-left: -85%;
+    transition: 0.5s;
+}
+#slider-top{
+    position: relative;
+    height: 25%;
+}
+#slider-content{
+    position: relative;
+    height: 75%;
+    background-color: #c1c8e4;
+}
+#close-nav{
+    display: inline-block;
+    font-size: 25px;
+    color: orangered;
+    float: right;
+    padding: 10px;
+    color: lightcoral;
+}
+#not-box{
+    height: 60px;
+    width: 80%;
+    background-color: rgba(0,0,0,0.2);
+    margin-left: 10%;
+    position: fixed;
+    bottom: 10%;
+}
+#noti{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 6%;
+}
+/*
+//////////////////////////////////////////////////////////////////
+*/
+#data{
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+}
+
+#container{
+    text-align: center;
+    margin: 2% 5%;
+    height: 120px;
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns:  0.95fr 0.15fr;
+    border: 0px solid;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px gray;
+}
+.default{
+    background-image: linear-gradient(45deg,green,yellow);
+}
+#container > div{
+   // border: var(--border);
+}
+#time-block
+{
+    height: 50%;
+}
+#close-btn{
+    background-color: lightcoral;
+    border: 0px solid;
+    border-radius: 0px 7px 7px 0px;
+    margin-right: -0.1px;
+}
+#close-task{
+    color: white;
+    margin-top: 40px;
+}
+
+#time-block p{
+    font-size:20px;
+    padding-top:25px;
+}
+#do-block p{
+    padding-top:10px;
+    font-size: 20px;
+}
+.right{
+    color: floralwhite;
+    margin-top: 35px;
+    padding: 3px;
+}
