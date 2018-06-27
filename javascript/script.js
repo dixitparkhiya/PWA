@@ -25,7 +25,7 @@ function addItem() {
         addmenu.style.marginTop = '48px';
         plus.className = 'fa fa-close';
     } else {
-        addmenu.style.marginTop = '-110px';
+        addmenu.style.marginTop = '-120px';
         plus.className = 'fa fa-plus';
     }
     if (counter > 1) {
